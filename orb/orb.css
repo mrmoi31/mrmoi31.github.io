@@ -1,0 +1,14 @@
+* {
+    background: black;
+    overflow: hidden;
+    cursor: url('./ressources/cursor.png'), auto;
+
+}
+canvas {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-left: -50vmin;
+    width: 100vmin;
+    height: 100vmin;
+}
