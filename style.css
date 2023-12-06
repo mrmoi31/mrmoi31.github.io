@@ -16,6 +16,10 @@
 	margin-top: 1%;
 }
 
+/****************/
+/*****NAV BAR****/
+/****************/
+
 a, a:visited {
 	color: #023e8a;
 	text-decoration: none;
@@ -61,9 +65,9 @@ nav > ul > li:hover:after, nav > ul > li:hover:before {
 	width: 100%;
 }
 
-/****************/
-/***Neon Clock***/
-/****************/
+/*******************/
+/*****NEON CLOCK****/
+/*******************/
 
 html {
     height: 100%;
