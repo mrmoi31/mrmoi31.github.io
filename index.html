@@ -1,37 +1,258 @@
 <!DOCTYPE html>
-<html lang="en-fr">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Projets de CSS</title>
-</head>
-<body>
-	<div class="container">
-		<nav>
-			<ul>
-				<li> <a href="./bh/blackhole.html">Blackhole</a></li>
-				<li> <a href="./typescript/typescript.html">TypeScript</a> </li>
-				<li> <a href="./orb/orb.html">Orb</a> </li>
-				<li> <a href="./star/star.html">Star</a> </li>
-			</ul>
-		</nav>
-	</div>
-	<div class="body">
-        <div class="outer-circle">
-            <div class="inner-circle"></div>
-            <span class="child1"></span>
-            <span class="child2"></span>
-            <span class="child3"></span>
-            <span class="child4"></span>
-        </div>
-    </div>
+<html lang="fr">
+	
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<title>Portfolio</title>
+		<link  rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<base href="./ressources/">
+	</head>
 
-    <div class="body-typescript">
-	    <div class="typescript">
-			<span class="text">Under Dev...</span>
-			<span class="hover-text">Under Dev</span>
+	<body>
+
+		<header>
+			
+			<img src="raccoon_luffy.png" alt="photo profil" height="192" width="192" class="img">
+			
+			<div class="profile">
+				<h2>LEVASSEUR Dorian</h2>
+				<i class="fa fa-github" style="font-size:24px"></i>
+				<a href="https://github.com/mrmoi31">Github</a>
+				<br>
+				<p><span id="age">-</span> ans</p>
+				<br>
+				<span class="fi fi-fr"></span>
+				<label>France</label>
+				<br>
+				<label>Etudiant en informatique</label>
+			</div>
+		    
+		    <script>
+		        const dateNaissance = "2004-06-11";
+		        function calculerAge(dateNaissance) {
+		            const aujourdHui = new Date();
+		            const naissance = new Date(dateNaissance);
+		            let age = aujourdHui.getFullYear() - naissance.getFullYear();
+		            const mois = aujourdHui.getMonth() - naissance.getMonth();
+
+		            if (mois < 0 || (mois === 0 && aujourdHui.getDate() < naissance.getDate())) {
+		                age--;
+		            }
+		            return age;
+		        }
+		        const ageSpan = document.getElementById('age');
+		        const age = calculerAge(dateNaissance);
+		        ageSpan.textContent = age;
+		    </script>
+
+		</header>
+
+		<div class="wrapper">
+
+			<section class="content">
+
+				<h2>Projets récents</h2>
+				<br>
+
+				<div class="projet">
+					<h3>Site web en React.js</h3>
+					<div class="img-projet"> <img src="react.png" alt="image sae crypto" style="width : 50%;"> </div>
+					<div>Un site web fait en react.js connecté à la blockchain d'Ethereum développé en cours</div>
+					<div>
+						<h4>Technologies utilisées</h4>
+						<div><abbr title="React"><img src="https://skillicons.dev/icons?i=react"></abbr></div>
+					</div>
+				</div>
+				
+				<div class="projet">
+					<h3>Algortihme Génétique</h3>
+					<div class="img-projet"> <img src="algo_gen.png" alt="algo génétique" style="width : 50%;"> </div>
+					<div>Un algorithme génétique pour le problème du marchand développé en cours</div>
+					<div>
+						<h4>Technologies utilisées</h4>
+						<div><abbr title="C"><img src="https://skillicons.dev/icons?i=c"></abbr></div>
+					</div>
+				</div>
+				
+				<div class="projet">
+					<h3>Cheat Code</h3>
+					<div class="img-projet"> <img src="cheatcode.png" alt="logo cheat code" style="width : 20%;"> </div>
+					<div>Un jeu mobile de rythme</div>
+					<div>
+						<h4>Technologies utilisées</h4>
+						<div><abbr title="Godot"><img src="https://skillicons.dev/icons?i=godot"></abbr></div>
+					</div>
+				</div>
+				
+				<div class="projet">
+					<h3>Puissance 4</h3>
+					<div class="img-projet"> <img src="puissance4.png" alt="image Puissance 4" style="width : 50%;"> </div>
+					<div>Un jeu de puissance 4 dans le terminal</div>
+					<div>
+						<h4>Technologies utilisées</h4>
+						<div><abbr title="C++"><img src="https://skillicons.dev/icons?i=cpp"></abbr></div>
+					</div>
+				</div>
+				
+				<div class="projet">
+					<h3>Visualisation de données</h3>
+					<div class="img-projet"> <img src="visudata.png" alt="image visualisation de données" style="width : 50%;"> </div>
+					<div>Un site copiant le principe d'APEX pour visualiser des données</div>
+					<div>
+						<h4>Technologies utilisées</h4>
+						<div><abbr title="Python, HTML, CSS"><img src="https://skillicons.dev/icons?i=py,html,css"></abbr></div>
+					</div>
+				</div>
+				
+				<div class="projet">
+					<h3>Proxy FTP</h3>
+					<div class="img-projet"> <img src="proxy.png" alt="image proxy" style="width : 50%;"> </div>
+					<div>Un proxy FTP développé en cours</div>
+					<div>
+						<h4>Technologies utilisées</h4>
+						<div><abbr title="C"><img src="https://skillicons.dev/icons?i=c"></abbr></div>
+					</div>
+				</div>
+				
+				<div class="projet">
+					<h3>MJC Castelginest</h3>
+					<div class="img-projet"> <img src="mjc.png" alt="logo mjc" style="width : 50%;"> </div>
+					<div>Un site web réalisé pour la mjc de castelginest</div>
+					<div>
+						<h4>Technologies utilisées</h4>
+						<div><abbr title="PHP,JavaScript,HTML,CSS"><img src="https://skillicons.dev/icons?i=php,js,html,css"></abbr></div>
+					</div>
+				</div>
+				
+				<div class="projet">
+					<h3>Application Java de gestion de socks de tomates</h3>
+					<div class="img-projet"> <img src="tomates.png" alt="image sae tomates" style="width : 50%;"> </div>
+					<div>Une application Java pour gérer des stocks de tomates développée en cours</div>
+					<div>
+						<h4>Technologies utilisées</h4>
+						<div><abbr title="Java"><img src="https://skillicons.dev/icons?i=java"></abbr></div>
+					</div>
+				</div>
+				
+				<div class="projet">
+					<h3>Application de chiffrement de messages</h3>
+					<div class="img-projet"> <img src="cesar.png" alt="image code cesar" style="width : 50%;"> </div>
+					<div>Une application de chiffrement/déchiffrement de messages développée en cours</div>
+					<div class="technos">
+						<h4>Technologies utilisées</h4>
+						<div><abbr title="C"><img src="https://skillicons.dev/icons?i=c"></abbr></div>
+					</div>
+				</div>
+				
+				<div class="projet">
+					<h3>Site web de l'IUT</h3>
+					<div class="img-projet"> <img src="iut.png" alt="logo IUT" style="width : 50%;"> </div>
+					<div>Un rework du site web de l'IUT développé en cours</div>
+					<div class="technos">
+						<h4>Technologies utilisées</h4>
+						<div><abbr title="HTML,CSS"><img src="https://skillicons.dev/icons?i=html,css"></abbr></div>
+					</div>
+				</div>
+			</section>
+			
+			<aside>
+				<!-- https://skillicons.dev/icons?i=html,css,js,cpp,c,php,git,py,java -->
+				<div>
+					<h3>Langages maitrisés</h3>
+					<div><abbr title="PHP,HTML,CSS"><img src="https://skillicons.dev/icons?i=php,html,css"></abbr></div>
+					<div><abbr title="C,C++,Python"><img src="https://skillicons.dev/icons?i=c,cpp,py"></abbr></div>
+				</div>
+
+				<br>
+
+				<div>
+					<h3>Langages en cours d'apprentissage</h3> 
+					<div><abbr title="Java,JavaScript"><img src="https://skillicons.dev/icons?i=java,js"></abbr></div>
+				</div>
+
+				<br>
+
+				<div>
+					<h3>Autres technologies</h3>
+					<div><abbr title="Figma,Gitlab,Github,Linux"><img src="https://skillicons.dev/icons?i=figma,gitlab,github,linux"></abbr></div>
+					<div><abbr title="Postman,Sublime Text,VSCode,Windows"><img src="https://skillicons.dev/icons?i=postman,sublime,vscode,windows"></abbr></div>
+				</div>
+
+				<br>
+
+				<h3>Projets totaux : <span id="nombre-projets">-</span></h3>
+
+				<br>
+				
+				<div class="tags">
+					<h3>Tags magnets</h3>
+					
+					<div style="display: flex; flex-wrap: wrap; justify-content: center;">
+					    <!-- Hamza Site perso -->
+					    <a href="https://n3m0.fr" target="_blank" style="margin-right:5px">
+					        <img src="https://n3m0.fr/nemo-button.gif" title="gif" alt="gif" width=88 height=31>
+					    </a>
+
+					    <!-- Annabelle Github -->
+					    <a href="https://github.com/Eiior" target="_blank" style="margin-right:5px">
+					        <img src="https://imgur.com/KyfTTtZ.gif" title="gif" alt="gif" width=88 height=31>
+					    </a>
+					 
+					    <!-- Dorian Github -->
+					    <a href="https://github.com/mrmoi31/" target="_blank" style="margin-right:5px">
+					        <img src="https://imgur.com/tzeRvpD.gif" title="gif" alt="gif" width=88 height=31>
+					    </a>
+					    
+					    <!-- Liam Github -->
+					    <a href="https://github.com/CaNaRdEoS/" target="_blank" style="margin-right:5px">
+					        <img src="https://imgur.com/b6v5kle.gif" title="gif" alt="gif" width=88 height=31>
+					    </a>
+					    
+					    <!-- Raphael Site perso -->
+					    <a href="https://fruitpassion.fr" target="_blank" style="margin-right:5px">
+					        <img src="https://imgur.com/HFbc2iB.gif" alt="gif" width=88 height=31>
+					    </a>
+
+					    <!-- Raphael Github -->
+					    <a href="https://github.com/FruitPassion" target="_blank" style="margin-right:5px">
+					        <img src="https://imgur.com/CySPgsa.gif" alt="gif" width=88 height=31>
+					    </a>
+
+					    <!-- Brice Github -->
+					    <a href="https://github.com/bloouu" target="_blank" style="margin-right:5px">
+					        <img src="https://imgur.com/PPCIpq9.gif" alt="gif" width=88 height=31>
+					    </a>
+
+					    <!-- Christian Site perso -->
+					    <a href="https://gamingdy.fr/" target="_blank" style="margin-right:5px">
+					        <img src="https://imgur.com/FO0gDVt.gif" alt="gif" width=88 height=31>
+					    </a>
+
+					    <!-- Sofia Github -->
+    					<a href="https://github.com/pavuchochek" target="_blank" style="margin-right:5px">
+    					    <img src="https://imgur.com/bfKA1Yh.gif" alt="gif" width=88 height=31>
+    					</a>
+					</div>
+
+				</div>
+
+			</aside>
+		
 		</div>
-	</div>
-</body>
+
+		<script>
+		    function compterProjets() {
+		        const projets = document.querySelectorAll('.projet');
+		        const nombreDeProjets = projets.length;
+		        const spanNombreProjets = document.getElementById('nombre-projets');
+		        spanNombreProjets.textContent = nombreDeProjets;
+		    }
+		    document.addEventListener('DOMContentLoaded', compterProjets);
+		</script>
+
+	</body>
+
 </html>

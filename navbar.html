@@ -1,0 +1,70 @@
+		<style>
+
+/****************/
+/*****NAV BAR****/
+/****************/
+
+.container {
+	width: 100%;
+	height: 100%;
+	background: #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1%;
+}
+
+a, a:visited {
+	color: #023e8a;
+	text-decoration: none;
+}
+
+nav {
+	background: #fff;
+	border-radius: 30px;
+	padding: 15px;
+	box-shadow: 0 5px 20px #caf0f8;
+}
+
+nav ul li {
+	display: inline-block;
+	list-style: none;
+	font-size: 1.5rem;
+	padding: 0 10px;
+	margin: 0 20px;
+	cursor: pointer;
+	position: relative;
+}
+
+nav > ul > li:after , nav > ul > li:before{
+	content: '';
+	width: 0;
+	height: 3px;
+	background: #00b4d8;
+	position: absolute;
+	transition: all 0.3s;
+}
+
+nav > ul > li:before {
+	left: 0px;
+	top: -5px;
+}
+
+nav > ul > li:after{
+	right: 0px;
+	bottom: -5px;
+}
+
+nav > ul > li:hover:after, nav > ul > li:hover:before {
+	width: 100%;
+}
+</style>
+
+<div class="container">
+	<nav>
+		<ul>
+			<li> <a href="./bh/blackhole.html">Blackhole</a></li>
+			<li> <a href="./star/star.html">Star</a> </li>
+		</ul>
+	</nav>
+</div>
