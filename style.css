@@ -9,8 +9,12 @@
 	color: rgb(190, 190, 190);
 }
 
+a:hover{
+	color: white;
+}
+
 body{
-	background-color: rgb(69, 69, 69);
+	background: #1f2430;
 }
 
 .wrapper{
