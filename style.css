@@ -84,6 +84,12 @@ aside{
 	transform: scale(2);
 }
 
+.langages{
+	display: flex;
+	gap: 10px;
+	flex-direction: row-reverse;
+}
+
 @media screen and (min-width: 300px) and (max-width : 768px){
 	body {
 		padding: 10px;
@@ -116,5 +122,9 @@ aside{
 		padding: 0;
 		margin-top: 20px;
 		width: 100%;
+	}
+	.langages{
+		text-align: center;
+		justify-content: center;
 	}
 }
