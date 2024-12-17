@@ -17,6 +17,7 @@
 
 a:hover{
 	color: white;
+	cursor: url(./ressources/click.png), auto;
 }
 
 body{
@@ -84,14 +85,16 @@ aside{
 	border-radius: 10px;
 	margin: 20px auto 20px;
 	width: 100%;
+	overflow: hidden;
 }
 
 .img-projet{
-	transition: transform .2s;
+	transition: transform .3s;
 }
 
 .img-projet:hover{
-	transform: scale(2);
+	transform: scale(1.5);
+	cursor: url(./ressources/click.png), auto;
 }
 
 .langages{
