@@ -90,6 +90,7 @@ aside{
 
 .img-projet{
 	transition: transform .3s;
+	cursor: url(./ressources/click.png), auto;
 }
 
 .img-projet:hover{
