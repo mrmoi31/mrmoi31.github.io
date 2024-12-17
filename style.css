@@ -9,6 +9,12 @@
 	color: rgb(190, 190, 190);
 }
 
+.tags{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: right;
+}
+
 a:hover{
 	color: white;
 }
@@ -130,5 +136,9 @@ aside{
 	.langages{
 		text-align: center;
 		justify-content: center;
+	}
+	.tags{
+		justify-content: center;
+		text-align: center;
 	}
 }
