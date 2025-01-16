@@ -105,7 +105,12 @@ aside{
 	flex-direction: row-reverse;
 }
 
+h1,h2,h3,h4,h5,h6,.img-projet{
+	padding-bottom: 20px;
+}
+
 @media screen and (min-width: 300px) and (max-width : 768px){
+	
 	body {
 		padding: 10px;
 	}
@@ -145,5 +150,8 @@ aside{
 	.tags{
 		justify-content: center;
 		text-align: center;
+	}
+	h1,h2,h3,h4,h5,h6,.img-projet{
+		padding-bottom: 20px;
 	}
 }
