@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+	
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<title>Portfolio</title>
+		<link  rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!--<base href="./ressources/">-->
+		<link rel="icon" type="image/x-icon" href="./ressources/favicon.ico">
+	</head>
+
+	<body>
+		<header>	
+			<img src="./ressources/raccoon_luffy.webp" alt="photo profil" height="192" width="192"class="img">
+			
+			<div class="profile" id="Profile">
+				<h2>LEVASSEUR Dorian</h2>
+				<a href="./ressources/cv.pdf" target="_blank">Mon CV</a><br>
+				<i class="fa fa-github" style="font-size:24px"></i>
+				<a href="https://github.com/mrmoi31">Github</a>
+				<br>
+				<p><span id="age">-</span> ans</p>
+				<br>
+				<span class="fi fi-fr"></span>
+				<label>France</label>
+				<br>
+				<label>Etudiant en informatique</label>
+			</div>
+		    
+		    <script>
+		        const dateNaissance = "2004-06-11";
+		        function calculerAge(dateNaissance) {
+		            const aujourdHui = new Date();
+		            const naissance = new Date(dateNaissance);
+		            let age = aujourdHui.getFullYear() - naissance.getFullYear();
+		            const mois = aujourdHui.getMonth() - naissance.getMonth();
+
+		            if (mois < 0 || (mois === 0 && aujourdHui.getDate() < naissance.getDate())) {
+		                age--;
+		            }
+		            return age;
+		        }
+		        const ageSpan = document.getElementById('age');
+		        const age = calculerAge(dateNaissance);
+		        ageSpan.textContent = age;
+		    </script>
+		</header>
+
+		<nav>
+			<a href="./index.html">Projets</a>
+			<a href="#Compétences">Compétences</a>
+			<a href="./index.html#Contact">Contact</a>
+		</nav>
+
+		<style type="text/css">
+			
+			.langages-revert{
+				display: flex;
+				gap: 10px;
+				flex-direction: row;
+				text-align: center;
+				justify-content: center;
+			}
+
+			nav {
+				font-size: 200%;
+				font-weight: 900;
+				text-align: center; 
+				justify-content: center;
+				margin-bottom: 3%;
+				margin-top: 3%;
+			}
+			
+			nav > *:not(:last-child) { 
+				text-decoration: none; 
+				padding-right: 10px; 
+				padding-left: 10px;
+			} 
+			
+			nav > *:last-child { 
+				text-decoration: none; 
+				padding-left: 10px;
+			}
+
+		</style>
+
+			<main class="content">
+				<!-- https://skillicons.dev/icons?i=html,css,js,cpp,c,php,git,py,java -->
+				<h3>Langages maitrisés</h3>
+				<div class="langages-revert">
+					<div><abbr title="CSS"><img src="https://skillicons.dev/icons?i=css"></abbr></div>
+					<div><abbr title="HTML"><img src="https://skillicons.dev/icons?i=html"></abbr></div>
+					<div><abbr title="PHP"><img src="https://skillicons.dev/icons?i=php"></abbr></div>
+					<div><abbr title="C++"><img src="https://skillicons.dev/icons?i=cpp"></abbr></div>
+					<div><abbr title="C"><img src="https://skillicons.dev/icons?i=c"></abbr></div>
+					<div><abbr title="Python"><img src="https://skillicons.dev/icons?i=py"></abbr></div>
+				</div>
+				<br>
+
+				<h3>Langages en cours d'apprentissage</h3>
+				<div class="langages-revert"> 
+					<div><abbr title="Java"><img src="https://skillicons.dev/icons?i=java"></abbr></div>
+					<div><abbr title="JavaScript"><img src="https://skillicons.dev/icons?i=js"></abbr></div>
+				</div>
+				<br>
+
+				<h3>Autres technologies</h3>
+				<div class="langages-revert">
+					<div><abbr title="Github"><img src="https://skillicons.dev/icons?i=github"></abbr></div>
+					<div><abbr title="Gitlab"><img src="https://skillicons.dev/icons?i=gitlab"></abbr></div>
+					<div><abbr title="Figma"><img src="https://skillicons.dev/icons?i=figma"></abbr></div>
+					<div><abbr title="Linux"><img src="https://skillicons.dev/icons?i=linux"></abbr></div>
+					<div><abbr title="Postman"><img src="https://skillicons.dev/icons?i=postman"></abbr></div>
+				</div>
+				<br>
+			</main>
